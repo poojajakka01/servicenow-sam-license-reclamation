@@ -1,0 +1,18 @@
+┌─────────┬────────────┬──────────────────────┬─────────────────────┬───────────┬───────────────────────────────────────────────────────┐
+│ (index) │ allocation │ product              │ action              │ idle_days │ reason                                                │
+├─────────┼────────────┼──────────────────────┼─────────────────────┼───────────┼───────────────────────────────────────────────────────┤
+│ 0       │ 'al01'     │ 'DemoDesign Pro'     │ 'keep'              │ 2         │ 'Active within threshold'                             │
+│ 1       │ 'al02'     │ 'DemoDesign Pro'     │ 'reclaim_candidate' │ 143       │ 'No activity for 143 days (threshold 60)'             │
+│ 2       │ 'al03'     │ 'DemoDesign Pro'     │ 'keep'              │ null      │ 'Within new-allocation grace period'                  │
+│ 3       │ 'al04'     │ 'DemoIDE Enterprise' │ 'keep'              │ null      │ 'User in exempt group: Release Engineering'           │
+│ 4       │ 'al05'     │ 'DemoIDE Enterprise' │ 'reclaim_candidate' │ 169       │ 'No activity for 169 days (threshold 90)'             │
+│ 5       │ 'al06'     │ 'DemoIDE Enterprise' │ 'keep'              │ 0         │ 'Active within threshold'                             │
+│ 6       │ 'al07'     │ 'DemoChat Business'  │ 'review'            │ null      │ 'No usage data and no allocation date; manual review' │
+└─────────┴────────────┴──────────────────────┴─────────────────────┴───────────┴───────────────────────────────────────────────────────┘
+┌─────────┬──────────────────────┬───────────┬────────────┬────────┬────────────────┐
+│ (index) │ product              │ evaluated │ candidates │ review │ annual_savings │
+├─────────┼──────────────────────┼───────────┼────────────┼────────┼────────────────┤
+│ 0       │ 'DemoIDE Enterprise' │ 3         │ 1          │ 0      │ 1200           │
+│ 1       │ 'DemoDesign Pro'     │ 3         │ 1          │ 0      │ 660            │
+│ 2       │ 'DemoChat Business'  │ 1         │ 0          │ 1      │ 0              │
+└─────────┴──────────────────────┴───────────┴────────────┴────────┴────────────────┘

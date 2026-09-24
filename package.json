@@ -1,0 +1,13 @@
+{
+  "name": "servicenow-sam-license-reclamation",
+  "version": "1.0.0",
+  "description": "Software license reclamation logic for a ServiceNow scoped app (SAM Pro-style), unit-tested outside the platform",
+  "license": "MIT",
+  "author": "Pooja Jakka",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "demo": "node scripts/demo.js"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,19 @@
+{
+  "policy": { "DemoDesign Pro": { "inactiveDays": 60 }, "DemoIDE Enterprise": { "inactiveDays": 90, "exemptGroups": ["Release Engineering"] } },
+  "allocations": [
+    { "sys_id": "al01", "user": "user.001", "product": "DemoDesign Pro", "allocated_on": "2025-11-02", "unit_cost": 660 },
+    { "sys_id": "al02", "user": "user.002", "product": "DemoDesign Pro", "allocated_on": "2025-12-15", "unit_cost": 660 },
+    { "sys_id": "al03", "user": "user.003", "product": "DemoDesign Pro", "allocated_on": "2026-08-25", "unit_cost": 660 },
+    { "sys_id": "al04", "user": "user.004", "product": "DemoIDE Enterprise", "allocated_on": "2025-06-01", "unit_cost": 1200, "user_groups": ["Release Engineering"] },
+    { "sys_id": "al05", "user": "user.005", "product": "DemoIDE Enterprise", "allocated_on": "2025-06-01", "unit_cost": 1200 },
+    { "sys_id": "al06", "user": "user.006", "product": "DemoIDE Enterprise", "allocated_on": "2025-06-01", "unit_cost": 1200 },
+    { "sys_id": "al07", "user": "user.007", "product": "DemoChat Business", "allocated_on": "", "unit_cost": 96 }
+  ],
+  "usage": [
+    { "user": "user.001", "product": "DemoDesign Pro", "source": "sso_signin", "last_activity": "2026-08-29 14:02:11" },
+    { "user": "user.002", "product": "DemoDesign Pro", "source": "sso_signin", "last_activity": "2026-04-10 09:00:00" },
+    { "user": "user.005", "product": "DemoIDE Enterprise", "source": "desktop_metering", "last_activity": "2026-02-01 12:00:00" },
+    { "user": "user.005", "product": "DemoIDE Enterprise", "source": "proxy_log", "last_activity": "2026-03-15 12:00:00" },
+    { "user": "user.006", "product": "DemoIDE Enterprise", "source": "desktop_metering", "last_activity": "2026-08-31 08:30:00" }
+  ]
+}
